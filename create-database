@@ -1,0 +1,78 @@
+CREATE DATABASE pokemon_db;
+
+USE pokemon_db;
+
+CREATE TABLE generation1 (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+type1 VARCHAR(255) NOT NULL,
+type2 VARCHAR(255) NULL,
+PRIMARY KEY (id)
+);
+
+INSERT INTO generation1 (id, name, type1, type2) VALUES
+('1', 'Bulbasaur', 'Grass', 'Poison'),
+('2', 'Charmander', 'Fire'),
+('3', 'Squirtle', 'Water'),
+('4', 'Pikachu', 'Electric'),
+('5', 'Eevee', 'Normal');
+
+CREATE TABLE generation2 (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+type1 VARCHAR(255) NOT NULL,
+type2 VARCHAR(255) NULL,
+PRIMARY KEY (id)
+);
+
+INSERT INTO generation2 (id, name, type1, type2) VALUES
+('1', 'Chikorita', 'Grass'),
+('2', 'Cyndaquil', 'Fire'),
+('3', 'Totodile', 'Water'),
+('4', 'Ampharos', 'Electric'),
+('5', 'Girafarig', 'Normal', 'Psychic');
+
+CREATE TABLE generation3 (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+type1 VARCHAR(255) NOT NULL,
+type2 VARCHAR(255) NULL,
+PRIMARY KEY (id)
+);
+
+INSERT INTO generation3 (id, name, type1, type2) VALUES
+('1', 'Treecko', 'Grass'),
+('2', 'Torchic', 'Fire'),
+('3', 'Mudkip', 'Water'),
+('4', 'Spheal', 'Ice', 'Water'),
+('5', 'Rayquaza', 'Dragon', 'Flying');
+
+CREATE TABLE generation4 (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+type1 VARCHAR(255) NOT NULL,
+type2 VARCHAR(255) NULL,
+PRIMARY KEY (id)
+);
+
+INSERT INTO generation4 (id, name, type1, type2) VALUES
+('1', 'Turtwig', 'Grass'),
+('2', 'Chimchar', 'Fire'),
+('3', 'Piplup', 'Water'),
+('4', 'Glaceon', 'Ice'),
+('5', 'Rotom', 'Electric', 'Ghost');
+
+CREATE TABLE generation5 (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+type1 VARCHAR(255) NOT NULL,
+type2 VARCHAR(255) NULL,
+PRIMARY KEY (id)
+);
+
+INSERT INTO generation5 (id, name, type1, type2) VALUES
+('1', 'Snivy', 'Grass'),
+('2', 'Tepig', 'Fire'),
+('3', 'Oshawott', 'Water'),
+('4', 'Reuniclus', 'Psychic'),
+('5', 'Jellicent', 'Water', 'Ghost');
