@@ -14,9 +14,9 @@ PRIMARY KEY (id)
 INSERT INTO pokemon (id, name, type1, type2, gen) VALUES
 ('1', 'Bulbasaur', 'Grass', 'Poison', '1'),
 ('2', 'Charizard', 'Fire', 'Flying', '1'),
-('3', 'Pikachu', 'Electric', '1'),
+('3', 'Pikachu', 'Electric', NULL, '1'),
 ('4', 'Girafarig', 'Normal', 'Psychic', '2'),
-('5', 'Kyogre', 'Water', '3');
+('5', 'Kyogre', 'Water', NULL, '3');
 
 CREATE TABLE types (
 typeid INT NOT NULL AUTO_INCREMENT,
@@ -43,7 +43,7 @@ PRIMARY KEY (moveid)
 INSERT INTO moves (moveid, move, type, power, pp) VALUES
 ('1', 'Solar Beam', 'Grass', '120', '10'),
 ('2', 'Flamethrower', 'Fire', '90', '15'),
-('3', 'Electro Ball', 'Electric', '10'),
+('3', 'Electro Ball', 'Electric', NULL, '10'),
 ('4', 'Psybeam', 'Psychic', '65', '20'),
 ('5', 'Hydro Pump', 'Water', '110', '5');
 
